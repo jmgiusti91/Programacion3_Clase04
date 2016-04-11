@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistema de ingresos de Empleados</title>
+	<link rel="stylesheet" href="flexboxgrid.min.css">
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1 class="titulo">Complete los siguientes datos del empleado </h1>
+			</div>
+		</div>
+			<div class="fondo">
+			<form action="administracion.php" method="post">
+				<div class="row around-xs">
+					<div class="col-xs-5">
+						<label for="nombre" class="items">Ingrese Nombre: <input type="text" name="nombre" id="nombre" class="campos"></label>
+					</div>
+				</div>
+				<div class="row around-xs">
+					<div class="col-xs-5">
+						<label for="apellido" class="items">Ingrese Apellido: <input type="text" name="apellido" id="apellido" class="campos"></label>
+					</div>
+				</div>
+				<div class="row around-xs">
+					<div class="col-xs-5">
+						<label for="DNI" class="items">Ingrese DNI: <input type="text" name="dni" id="dni" class="campos documento"></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-5 end-xs">
+						<span class="items sex">Masculino </span><input type="radio" name="sexo" id="sexoM" value="M">
+					</div>
+					<div class="col-xs-5">
+						<span class="items sex">Femenino </span><input type="radio" name="sexo" id="sexoF" value="F" checked>
+					</div>
+				</div>
+				<div class="row around-xs">
+					<div class="col-xs-5">
+						<label for="legajo" class="items">Ingrese Legajo: <input type="number" name="legajo" id="legajo" class="campos leg"></label>
+					</div>
+				</div>
+				<div class="row around-xs">
+					<div class="col-xs-5">
+						<label for="sueldo" class="items">Ingrese Sueldo: <input type="text" name="sueldo" id="sueldo" class="campos salario"></label>
+					</div>
+				</div>
+				<div class="row around-xs">
+					<div class="col-xs-3">
+						<input type="submit" name="enviar" id="enviar" value="Enviar" class="boton">
+					</div>
+				</div>
+			</form>
+			</div>
+	</div>
+</body>
+</html>

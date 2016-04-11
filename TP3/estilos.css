@@ -1,0 +1,82 @@
+.titulo{
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 72%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 72%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 72%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	margin-top:0;
+	margin-bottom: 0;
+	padding:30px;
+	font-family: "Century Gothic", sans-serif;
+	font-weight: lighter;
+	color:#FFF;
+}
+
+.fondo{
+	background: url("img-noise-960x900.png");
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 500px;
+}
+
+.fondo .items{
+	font-size: 1.3rem;
+	font-family: "Century Gothic", sans-serif;
+	color:#FFF;
+}
+
+.fondo .items.sex{
+	display: inline-block;
+	margin-bottom: 30px;
+}
+
+.fondo .campos{
+	margin-left: 15px;
+	margin-bottom: 30px;
+	padding: 5px 10px;
+	background-color: #DDD;
+	border: 1px solid #DDD;
+	border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+}
+
+.fondo .campos.documento{
+	margin-left: 53px;
+}
+
+.fondo .campos.salario{
+	margin-left: 21px;
+}
+
+.fondo .campos.leg{
+	margin-left: 23px;
+}
+
+.fondo .boton{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	padding: 5px 55px;
+	background:#00F;
+	border: 1px solid #00F;
+	color:#FFF;
+	cursor: pointer;
+	transition:0.3s ease all;
+	animation-name: latido;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+.fondo .boton:hover{
+	background:#000;
+	border: 1px solid #000;
+}
+
+@keyframes latido{
+	50%{
+		padding: 7px 85px;
+		font-size: 1.3rem;
+	}
+}
